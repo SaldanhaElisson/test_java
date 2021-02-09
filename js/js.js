@@ -15,12 +15,26 @@ const form = document.getElementById('form');
 
             console.log(final);
 
-            if (final > 6){
+            function capitalizeFirstLetter(str) {
+
+                // converting first letter to uppercase
+                const capitalized = str.charAt(0).toUpperCase() + str.slice(1);
+            
+                return capitalized;
+            }
+
+            const alunoup=capitalizeFirstLetter(aluno)
+
+            if (recup <= 6){
                  aprovado =` 
-                <p>${aluno}, sua média foi ${final}, PARABÈNS !!<p>
-            `} 
-            else{ 
-                aprovado =`${aluno}, sua média foi ${final}, sua média no proxímo semestre precisa ser ${recup}`
+                <p>${alunoup}, sua média foi ${final}, PARABÈNS !!<p>
+            `} else if(recup>=10){
+                aprovado=`<p>${alunoup}, infelizmente não há nada </br>
+                 que vc possa fazer para alcançar</br>
+                  a média no proxímo semestre &#128169  `
+
+            }  else { 
+                aprovado =`<p>${alunoup}, sua média foi ${final.toFixed(2)}</br> sua média no proxímo semestre precisa ser ${recup}<p>`
                 
             }
 
