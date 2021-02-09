@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário </title>
+</head>
+<body>
+    <header>
+        <h1>Formulário</h1>
+    </header>
+    <form action="#" method="post" name="curso">
+        <label >Nome</label><br>
+        <input type="text" name="fNome" value="Digite seu nome"><br><br>
+        <input type="password" name="Fsenha"><br><br>
+        <input type="submit" name="btEnviar" value="Enviar">
+    </form>
+    <script>
+        tag=document.forms["curso"];
+        document.write(tag.elements["fNome"].value);
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GetElements</title>
+</head>
+<body>
+    <p>Manipulando html com js</p>
+    <p id='phrases'>Mudando a cor GetByElementId</p>
+
+    <p id="text">Aqui</p>
+
+    <p>aqui</p>
+
+    <p class="selector">aqui</p>
+    
+    <script>
+        var tagp;
+        tx=document.getElementById('phrases')
+        tx.style.color="#F00"
+
+        var tag0;
+        tag0=document.getElementById('text')
+        tag0.innerHTML="Inserindo texto em elemtnos html com java"
+
+        var ptag = document.getElementsByTagName('p')[3];
+
+        ptag.innerHTML="Manipulando com a tag do Html e utilizando arrays para  especificar"
+
+
+
+    </script>
+</body>
+</html>

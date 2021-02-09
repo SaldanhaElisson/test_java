@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notas de alunos</title>
+    <link rel="stylesheet" href="media/css.css">
+</head>
+<body>
+    <h1>Aprovações</h1>
+    <form action="#" class="notas" id="form">
+       
+        <div class="form_group">
+            <label for="aluno">Aluno</label>
+            <input type="text" id="aluno" name="oi" value="">
+        </div> 
+
+        <div class="form_group">
+            <label for="first_semenster">1° Nota</label>
+            <input type="number" placeholder="Digite sua nota Parcial" id="first_semenster">
+        </div>
+        
+        <div class="form_group">
+            <label for="secon_semenster">2° Nota</label>
+             <input type="number" id="secon_semenster" placeholder="Digite sua nota de Trabalho"> 
+        </div>
+
+        <div class="form_group">
+            <label for="third_semenster">3° Nota</label>
+            <input type="number" id="third_semenster" placeholder="Digite sua nota Bimestral">
+        </div>
+
+        <button type="submit"> Calcular </button>
+        
+        <div id="result"></div>
+
+        
+
+
+    </form>
+
+   <script src="js/js.js"></script>
+</body>
+</html>

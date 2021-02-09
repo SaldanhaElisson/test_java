@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data e hora</title>
+</head>
+<body>
+    
+    <script>
+        var DateHours= new Date()
+
+        var data = new Date()
+        var dia = data.getDate();
+        var mes = data.getMonth();
+        var ano= data.getFullYear();
+        document.write(` ${dia}/ ${mes}/${ano}`)
+        
+        var datra1= new Date();
+        var meses = ["Janeiro", "Feveiro", "Março", "Abril", "Maio","Junho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"]
+        
+        var dia1= datra1.getDate();
+        var mes1= datra1.getMonth();
+        var year1= datra1.getFullYear();
+        document.write("Belo Horizonte, " + dia1 + " de " + meses[mes1] + " de " + year1 + "<br>");
+    </script>
+</body>
+</html>
