@@ -21,4 +21,19 @@ console.log(canDrive)
 let aplha='alpha'
 console.log(aplha+'bet'+'s')
 
+/* 
+FALSY 
+quando um valor é considerado false em contextos onde um booleano é obrigatório (condicionais e loops)
+
+false 
+0
+-0
+""
+null
+undefinde
+NaN
+
+*/
+
+console.log(true? 'verdadeira' : 'falso')
 
