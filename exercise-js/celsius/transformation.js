@@ -11,6 +11,7 @@ function transformDegree(degree){
     const celsiusExist = degree.toUpperCase().includes('C')
     const fahrenheit = degree.toUpperCase().includes('F')
 
+    //fluxo de erro
     if(!celsiusExist && !fahrenheit){
         throw new Error ('Grau não indetificado')
     }
@@ -19,12 +20,21 @@ function transformDegree(degree){
     //fluz ideal, F -> C
     let updateDegree = Number(degree.toUpperCase().replace("F", ""))
     let formula = (fahrenheit) => (fahrenheit - 32 )
-    let defreSign = 'C'
+    let degreeSign = 'C'
+
+    //fluxo alternativo expressão regular
+    if(celsiusExist ){
+        updateDegree = Number(degree.toUpperCase().replace("F", ""))
+        formula = (celsius) => celsius * 9/5 + 32 
+        degreeSign = 'F'
+    }
+
+    return formula(updateDegree) + degreeSign
 }
 
 try{
-    transformDegree('50F')
-    transformDegree('50z')
+    console.log(transformDegree('50F'))
+    //transformDegree('50z')
 } catch(error){
     console.log(error.message)
 }
